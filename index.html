@@ -38,17 +38,58 @@
   <!-- Main container for the main part of the page -->
   <main>
     <div>
-      <div id="songSelectForm">
+      <!-- workout quotes start-->
 
-      </div>
-    </div>
-
-    <!-- workout schedule end -->
-    <!-- weather app start -->
-    <section>
-
+      <!-- workout quotes end -->
+      <!-- weather app start -->
+       <!-- Column on left side of webpage to Search For City -->
+       <section class="" id="search-form">
+        <form class="" id="searchCityForm">
+            <label for="searchCity" class="">Search for a City</label>
+            <div class="">
+                <input type="text" class="" id="searchCity" autofocus="true"
+                    aria-describedby="searchCity" />
+                <button type="submit" class="" id="searchCityForm">
+                    <span class=""></span>
+                </button>
+            </div>
+        </form>
+        <li class="" id="searchedCityLi"></li>
     </section>
-    <!-- weather app end -->
+    <!-- Column End -->
+
+    <section class="" id="display-weather-info">
+        <!-- Row above 5-day forecast -->
+        <div class="">
+            <div class="">
+                <h2 class="" style="height: 100px">
+                    <span id="cityName">Name of City</span>
+                    <span class="" id="currentdate"> MM/DD/YY</span>
+                    <img class="weather-icon" id="weatherIconToday" src="">
+                    </img>
+                </h2>
+                <p class="card-text">
+                    Temperature:
+                    <span id="tempToday">--</span>
+                </p>
+                <p class="card-text">
+                    Humidity:
+                    <span id="humidityToday">--</span>
+                </p>
+                <p class="card-text">
+                    Wind Speed:
+                    <span id="windSpeedToday">--</span>
+                </p>
+                <p class="card-text">
+                    UV Index:
+                    <span id="UVIndexToday">--</span>
+                </p>
+            </div>
+        </div>
+        <!-- Row End -->
+      
+      <!-- weather app end -->
+    </div>
   </main>
   <!-- "reach out" start -->
   <section id="reach-out" class="contact">

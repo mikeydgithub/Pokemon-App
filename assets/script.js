@@ -14,7 +14,15 @@ var forecastWeatherApiStarts =
 // Get weather info from OpenWeather starts here
 var getCityWeather = function (searchCityName) {
     // format openweather api url
-    var apiUrl = musicApiStarts + musicGenreList;
+    var apiUrl = dailyWeatherApiStarts + searchCityName + "&" + personalAPIKey + "&" + unit;
+    // Make request to url
+    fetch(apiUrl).then(function (response) {
+        if (response.ok) {
+            return respone.json().then(function (response) {
+                $("# ").html(response.name);
+            })
+        }
+    })
     
 
 

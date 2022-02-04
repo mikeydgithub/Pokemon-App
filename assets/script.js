@@ -1,10 +1,22 @@
-var url = "https://30-000-radio-stations-and-music-charts.p.rapidapi.com/rapidapi?"
-var radioStationInfo = "id=%7Bid%7D"
-var musicGenreList = "categories=1"
-var weeklyCharts = "chartsweek=1"
-var monthlyCharts = "chartsmonth=1"
-var dailyCharts = "charts24h=1"
-var countriesList = "countries="
-var unlimitedRadioSearch = "country=ALL&keyword=%3CREQUIRED%3E&genre=ALL"
-var nowPlaying = "nowplaying=1"
-var limitedRadioSearch = "genre=ALL&search_keyword=%3CREQUIRED%3E&country=ALL"
+// Set global variables for weather
+var citiesListArr = [];
+var numOfCities = 9;
+var personalAPIKey = "appid=7146bfe32a294fc2979b70219212c7a2";
+var unit = "units=imperial";
+var dailyWeatherApiStarts =
+    "https://api.openweathermap.org/data/2.5/weather?q=";
+var dailyUVIndexApiStarts = "https://api.openweathermap.org/data/2.5/uvi?";
+var forecastWeatherApiStarts =
+    "https://api.openweathermap.org/data/2.5/onecall?";
+
+
+
+// Get weather info from OpenWeather starts here
+var getCityWeather = function (searchCityName) {
+    // format openweather api url
+    var apiUrl = musicApiStarts + musicGenreList;
+    
+
+
+}
+

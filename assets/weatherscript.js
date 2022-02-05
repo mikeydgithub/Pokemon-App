@@ -18,7 +18,7 @@ var getCityWeather = function (searchCityName) {
     // Make request to url
     fetch(apiUrl).then(function (response) {
         if (response.ok) {
-            return respone.json().then(function (response) {
+            return response.json().then(function (response) {
                 $("# ").html(response.name);
             })
         }

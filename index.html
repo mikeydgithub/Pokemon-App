@@ -34,7 +34,7 @@
   <!-- hero/jumbotron -->
   <section class="container">
     <div class="hero-cta">
-      <h2>Relax your mind and git in the zone</h2>
+      <h5>Relax your mind and git in the zone</h5>
     </div>
   </section>
   <!-- hero/jumbotron end -->
@@ -42,7 +42,8 @@
   <!-- Main container for the main part of the page -->
   <main>
     <div>
-      <div class="row container" id="searchSection">
+      <!-- Workout and Weather Search Section -->
+      <div class="container" id="searchSection">
         <!-- Workout Search Start-->
         <section class="" id="search-form">
           <form class="col s5" id="searchCityForm">
@@ -76,16 +77,27 @@
       </div>
       <!-- Search For City End -->
 
-      <section class="" id="display-weather-info">
-        <!-- Weather Display -->
-        <div class="container">
+      <!-- Display For Both Song and Weather Containers -->
+      <section class="row container" id="display-windows">
+        <!-- Song Display Start-->
+        <div id="song-display-info" class="col s6">
           <div class="">
-            <h2 class="" style="height: 100px">
+            <h3 class="">
+              <span id="songName">Name of Song</span>
+            </h3>
+          </div>
+        </div>
+        <!-- Song Display End -->
+
+        <!-- Weather Display -->
+        <div id="display-weather-info"class="col s6">
+          <div class="">
+            <h3 class="" style="height: 100px">
               <span id="cityName">Name of City</span>
               <span class="" id="currentdate"> MM/DD/YY</span>
               <img class="weather-icon" id="weatherIconToday" src="">
               </img>
-            </h2>
+            </h3>
             <p class="card-text">
               Temperature:
               <span id="tempToday">--</span>
@@ -104,7 +116,8 @@
             </p>
           </div>
         </div>
-        <!-- Weather Display | Weather App End -->
+      </section>
+      <!-- Weather Display End | Weather App End -->
     </div>
   </main>
   <!-- "Reach Out" Start -->

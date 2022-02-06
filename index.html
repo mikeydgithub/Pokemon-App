@@ -5,19 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gitPumped</title>
+  <title>💪gitPumped💪</title>
   <link rel="stylesheet" href="assets/style.css">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 
-<body>
+<body class="blue-grey darken-4">
   <!-- navigation tags - block level element -->
-  <header>
-    <h1><a href="/">gitPumped</a></h1>
-    <nav>
+  <header class="row">
+    <h5 class="col s8"><a href="/">gitPumped💪</a></h5>
+    <nav class="blue-grey darken-2">
       <ul>
         <li><a href="#quotes">Quotes</a></li>
         <li><a href="#the-weather">The Weather</a></li>
@@ -28,7 +32,7 @@
   <!-- end navigation -->
 
   <!-- hero/jumbotron -->
-  <section class="hero">
+  <section class="container">
     <div class="hero-cta">
       <h2>Relax your mind and git in the zone</h2>
     </div>
@@ -38,75 +42,73 @@
   <!-- Main container for the main part of the page -->
   <main>
     <div>
-      <!-- Workout Search Start-->
-      <section class="" id="search-form">
-        <form class="" id="searchCityForm">
-            <label class="">Search</label>
+      <div class="row container" id="searchSection">
+        <!-- Workout Search Start-->
+        <section class="" id="search-form">
+          <form class="col s5" id="searchCityForm">
+            <label class="">Search For Playlist</label>
             <div class="">
-                <input class="" id="input" autofocus="true"/>
-                     
-                <button class="" id="btn">
-                    <span class=""></span>
-                </button>
+              <input class="" id="input" autofocus="true" />
+
+              <button class="" id="btn">
+                <span class=""></span>
+              </button>
             </div>
-        </form>
-        <li class="" id="searchedCityLi"></li>
-    </section>
-      
+          </form>
+          <li class="" id="searchedCityLi"></li>
+        </section>
+        <!-- Workout Search End -->
 
-      <!-- Workout Search End -->
-
-      <!-- Weather App Start -->
-       <!-- Search For City -->
-       <section class="" id="search-form">
-        <form class="" id="searchCityForm">
+        <!-- Weather App Start | Search For City Start -->
+        <section class="" id="search-form">
+          <form class="col s5" id="searchCityForm">
             <label class="">Search for a City</label>
             <div class="">
-                <input class="" id="searchCity" autofocus="true"/>
-                     
-                <button class="" id="searchCityForm">
-                    <span class=""></span>
-                </button>
-            </div>
-        </form>
-        <li class="" id="searchedCityLi"></li>
-    </section>
-    <!-- Search For City End -->
+              <input class="" id="searchCity" autofocus="true" />
 
-    <section class="" id="display-weather-info">
-        <!-- Weather Display -->
-        <div class="">
-            <div class="">
-                <h2 class="" style="height: 100px">
-                    <span id="cityName">Name of City</span>
-                    <span class="" id="currentdate"> MM/DD/YY</span>
-                    <img class="weather-icon" id="weatherIconToday" src="">
-                    </img>
-                </h2>
-                <p class="card-text">
-                    Temperature:
-                    <span id="tempToday">--</span>
-                </p>
-                <p class="card-text">
-                    Humidity:
-                    <span id="humidityToday">--</span>
-                </p>
-                <p class="card-text">
-                    Wind Speed:
-                    <span id="windSpeedToday">--</span>
-                </p>
-                <p class="card-text">
-                    UV Index:
-                    <span id="UVIndexToday">--</span>
-                </p>
+              <button class="" id="searchCityForm">
+                <span class=""></span>
+              </button>
             </div>
-        </div>
+          </form>
+          <li class="" id="searchedCityLi"></li>
+        </section>
+      </div>
+      <!-- Search For City End -->
+
+      <section class="" id="display-weather-info">
         <!-- Weather Display -->
-      <!-- Weather App End -->
+        <div class="container">
+          <div class="">
+            <h2 class="" style="height: 100px">
+              <span id="cityName">Name of City</span>
+              <span class="" id="currentdate"> MM/DD/YY</span>
+              <img class="weather-icon" id="weatherIconToday" src="">
+              </img>
+            </h2>
+            <p class="card-text">
+              Temperature:
+              <span id="tempToday">--</span>
+            </p>
+            <p class="card-text">
+              Humidity:
+              <span id="humidityToday">--</span>
+            </p>
+            <p class="card-text">
+              Wind Speed:
+              <span id="windSpeedToday">--</span>
+            </p>
+            <p class="card-text">
+              UV Index:
+              <span id="UVIndexToday">--</span>
+            </p>
+          </div>
+        </div>
+        <!-- Weather Display | Weather App End -->
     </div>
   </main>
-  <!-- "reach out" start -->
-  <section id="reach-out" class="contact">
+  <!-- "Reach Out" Start -->
+  <section id="reach-out" class="container contact">
     <div class="flex-row">
       <h2 class="section-title secondary-border">
         Git Back To Us
@@ -153,8 +155,8 @@
   </section>
   <!-- "reach out" end -->
   <!-- footer -->
-  <footer>
-    <h2>💪 Submitted on GitHub with GitBash by Git Relaxed. 💪</h2>
+  <footer class="container">
+    <h6>💪 Submitted on GitHub with GitBash by Git Relaxed. 💪</h6>
   </footer>
   <!-- footer end -->
   <script src="assets/weatherscript.js"></script>

@@ -1,45 +1,88 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header, h1 {
-    color: black;
-}
 
-.hero-cta, h2 {
-    text-align: center;
-    padding-top: 60px;
-
-}
-
-.container, .contact {
-    text-align: center;
-}
-
-footer {
-    width: 100%;
-    font-size: 1px;
-}
-
-.card-text {
-    text-align: center;
-}
-
-.cityName, .songName {
-    text-align: center;
-}
-
-.searchform {
-  padding: 20px 40px;
-}
-
-.searchlists {
-  list-style: none;
-}
-
+/*Nav Bar Start*/
 .navsticky {
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
 }
+/*Nav Bar End*/
+
+/*Header Content Start */
+.header{
+    color: black;
+    text-align: center;
+    padding-top: 60px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*Header Content End*/
+
+
+
+/*Search Form Start */
+.searchlists {
+  list-style: none;
+}
+
+.searchform {
+    display: inline-block;
+}
+
+.search-container {
+    border: 3px solid;
+    border-radius: 3px;
+    width: auto;
+    padding: 20px 40px;
+    margin: 20px;
+}
+/*Search Form End */
+
+/*Users and Weather Github Container Start*/
+.users-weather-github-container {
+    display: inline-block;
+    border: 3px solid;
+    border-radius: 5px;
+    width: 50%;
+    padding: 20px 10%;
+    margin: 50px;
+    left: 10%;
+}
+/*Users and Weather Github Container End*/
+
+/*Git Back To Us Start*/
+.gitback-to-us-container{
+    margin: 0 auto 35px auto;
+    background-color: red;
+    justify-content: space-around;
+    border: 3px solid;
+    border-radius: 1%;
+    width: 95%;
+    padding: 20px 10%;
+    margin: 50px;
+}
+
+/*Git Back To Us End*/
+
+/*Footer Section Start*/
+footer {
+    width: 100%;
+    font-size: 5px;
+    margin-top: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+/*Footer Section End*/
+
+/*Media query for different screens*/
+@media screen and (max-width: 1200px){}
+
+    

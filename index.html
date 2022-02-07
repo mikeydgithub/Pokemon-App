@@ -57,8 +57,15 @@
           <form class="col s5" id="search-user-form">
             <h4 class="">Search For Partner</h4>
             <div class="">
-              <input class="" id="search-user" autofocus="true" />
-
+              <input class="" id="search-user" autofocus="true" autocomplete="off" list="users"/>
+              <datalist id="users">
+<!--                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+                <option value="Microsoft Edge">-->
+              </datalist>
               <button class="" id="userSearchBtn">
                 <span class="">Enter</span>
               </button>
@@ -160,7 +167,7 @@
           <h3>Contact Us</h3>
           <form>
             <label for="contact-name">Your Name</label>
-            <input type="text" id="contact-name" placeholder="Your Name" autocomplete="off" />
+            <input type="text" id="contact-name" placeholder="Your Name" />
 
             <label for="contact-message">Message</label>
             <textarea id="contact-message" placeholder="Message"></textarea>

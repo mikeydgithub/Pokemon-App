@@ -5,22 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gitPumped</title>
+  <title>🔌GitConnect🔌</title>
   <link rel="stylesheet" href="assets/style.css">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 
-<body>
+<body class="blue-grey darken-4">
   <!-- navigation tags - block level element -->
-  <header>
-    <h1 class="center-align"><a href="/" class="green-text text-darken-3">gitPumped</a></h1>
-    <nav class="navbar">
+  <header class="row">
+    <h5 class="col s8"><a class="blue-grey-text text-lighten-5" href="/">GitConnect🔌</a></h5>
+    <nav class="blue-grey darken-2">
       <ul>
-        <li><a href="workout-schedule">Workout Schedule</a></li>
-        <li><a href="#weather-app">What's The Weather?</a></li>
+        <li><a href="#quotes">Connections</a></li>
+        <li><a href="#the-weather">The Weather</a></li>
         <li><a href="#git-back-to-us">Git Back To Us</a></li>
       </ul>
     </nav>
@@ -39,25 +43,96 @@
   </container>
 
   <!-- hero/jumbotron -->
-  <section class="hero">
-    <div class="hero-cta container">
-      <h2>Give Your Fingers A Rest.</h2>
+  <section class="container">
+    <div class="hero-cta">
+      <h5> Git Connected With Someone Near You</h5>
     </div>
   </section>
-  <container>
-    <div id="clock">
+  <!-- hero/jumbotron end -->
 
+  <!-- Main container for the main part of the page -->
+  <main>
+    <div>
+      <!-- User and Weather Search Section -->
+      <div class="container" id="searchSection">
+        <!-- User Search Start-->
+        <section class="" id="search-form">
+          <form class="col s5" id="search-user-form">
+            <label class="">Search For Partner</label>
+            <div class="">
+              <input class="" id="search-user" autofocus="true" />
+
+              <button class="" id="userSearchBtn">
+                <span class=""></span>
+              </button>
+            </div>
+          </form>
+          <li class="" id="searchedUserLi"></li>
+        </section>
+        <!-- GitHub Users Search End -->
+
+        <!-- Weather App Start | Search For City Start -->
+        <section class="" id="search-form">
+          <form class="col s5" id="searchCityForm">
+            <label class="">Search for a City</label>
+            <div class="">
+              <input class="" id="searchCity" autofocus="true" />
+
+              <button class="" id="searchCityForm">
+                <span class=""></span>
+              </button>
+            </div>
+          </form>
+          <li class="" id="searchedCityLi"></li>
+        </section>
+      </div>
+      <!-- Search For City End -->
+
+      <!-- Display For Both GitHub Users and Weather Containers -->
+      <section class="row container" id="display-windows">
+        <!-- Playlist Display Start-->
+        <div id="user-display-info" class="col s6">
+          <div class="">
+            <h3 class="">
+              <span id="userName">Name of GitHub User</span>
+            </h3>
+          </div>
+        </div>
+        <!-- GitHub Users Display End -->
+
+        <!-- Weather Display -->
+        <div id="display-weather-info"class="col s6">
+          <div class="">
+            <h3 class="" style="height: 100px">
+              <span id="cityName">Name of City</span>
+              <span class="" id="currentdate"> MM/DD/YY</span>
+              <img class="weather-icon" id="weatherIconToday" src="">
+              </img>
+            </h3>
+            <p class="card-text">
+              Temperature:
+              <span id="tempToday">--</span>
+            </p>
+            <p class="card-text">
+              Humidity:
+              <span id="humidityToday">--</span>
+            </p>
+            <p class="card-text">
+              Wind Speed:
+              <span id="windSpeedToday">--</span>
+            </p>
+            <p class="card-text">
+              UV Index:
+              <span id="UVIndexToday">--</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Weather Display End | Weather App End -->
     </div>
-  </container>
-  
-  <!-- workout schedule end -->
-  <!-- weather app start -->
-  <section>
-
-  </section>
-  <!-- weather app end -->
-  <!-- "reach out" start -->
-  <section id="reach-out" class="contact">
+  </main>
+  <!-- "Reach Out" Start -->
+  <section id="reach-out" class="container contact">
     <div class="flex-row">
       <h2 class="section-title secondary-border container">
         Git Back To Us
@@ -66,7 +141,7 @@
 
     <div class="contact-info">
       <div>
-        <h3>Git Pumped</h3>
+        <h3>Git Connect</h3>
         <p>
           Any questions or concerns before signing up?
           <br />
@@ -77,8 +152,8 @@
           55 Main Street <br />
           Some Town, Ca <br />
           12345<br />
-          P: 555.GIT.PUMPED (555.786.2839)<br />
-          E: <a href="mailto:info@gitpumped.io">info@gitpumped.io</a>
+          P: 555.GIT.CONNECT (555.786.2839)<br />
+          E: <a href="mailto:info@gitconnect.io">info@gitconnect.io</a>
         </address>
 
       </div>
@@ -104,11 +179,12 @@
   </section>
   <!-- "reach out" end -->
   <!-- footer -->
-  <footer>
-    <h2>💪 Submitted on GitHub with GitBash by Git Pumped. 💪</h2>
+  <footer class="container">
+    <h6>🔌 Submitted on GitHub with GitBash by Git Connect. 🔌</h6>
   </footer>
   <!-- footer end -->
-<script src="assets/script.js"></script>
+  <script src="assets/weatherscript.js"></script>
+  <script src="assets/githubUser.js"></script>
 </body>
 
 </html>

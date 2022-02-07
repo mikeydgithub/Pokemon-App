@@ -1,7 +1,30 @@
-.navbar {
-  background-color: gray;
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.box {
-  margin: 300px;
+header, h1 {
+    color: black;
 }
+
+.hero-cta, h2 {
+    text-align: center;
+
+}
+
+.container, .contact {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    font-size: 1px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.cityName, .songName {
+    text-align: center;
+}
+

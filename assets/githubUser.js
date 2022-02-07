@@ -72,7 +72,14 @@ var formSubmitHandler = function (event) {
 
     if (username) {
         getUserRepos(username);
+
+        // remove and create p element with username
+        $(".userGit").remove();
+        var userP= $("<P>").addClass("userGit").text(username);
+        $("#userName").append(userP);
+
         nameInputEl.value = "";
+        
         // Add username (if new) to LocalStorage and githubUsr array
         addUserName(username);
     } else {

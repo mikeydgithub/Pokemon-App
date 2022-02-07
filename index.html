@@ -18,7 +18,7 @@
 </head>
 
 <body class="blue-grey darken-4">
-  <nav class="blue-grey darken-2">
+  <nav class="blue-grey darken-2 navsticky">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo blue-grey-text text-lighten-5">GitConnect🔌</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -88,11 +88,14 @@
       <!-- Display For Both GitHub Users and Weather Containers -->
       <section class="row container" id="display-windows">
         <!-- Playlist Display Start-->
-        <div id="user-display-info" class="col s6">
+        <div id="repoSearchTerm" class="col s6">
           <div class="">
-            <h3 class="">
-              <span id="userName">Name of GitHub User</span>
-            </h3>
+            
+              <h3 id="repoContainerEl">Name of GitHub User
+                <span id="repo-search-term"></span>
+              </h3>
+              <div id="repos-container" class="list-group"></div>
+            
           </div>
         </div>
         <!-- GitHub Users Display End -->

@@ -35,3 +35,10 @@ footer {
 .searchlists {
   list-style: none;
 }
+
+.navsticky {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

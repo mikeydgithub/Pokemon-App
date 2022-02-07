@@ -15,6 +15,26 @@ var getUserRepos = function (user) {
     });
 };
 
+var addUserName = function(user) {
+
+    var userExists = false;
+
+    // check if the user already exists
+    for (var i=0; i < githubUsr.length; i++) {
+        if (githubUsr[i] == user) {
+            userExists = true;
+        };
+    };
+    // if the user doesn't exists
+    if (!userExists) {
+        // add user to the end of githubUsr array and refresh localStorage ghUsers array
+        githubUsr[githubUsr.length] = user;
+        createUser(user);
+        localStorage.setItem("ghUsers", JSON.stringify(githubUsr));
+
+    }
+};
+
 var formSubmitHandler = function (event) {
     event.preventDefault();
     // get value from input element

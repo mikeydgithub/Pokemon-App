@@ -1,0 +1,45 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, h1 {
+    color: black;
+}
+
+.hero-cta, h2 {
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.container, .contact {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    font-size: 1px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.cityName, .songName {
+    text-align: center;
+}
+
+.searchform {
+  padding: 20px 40px;
+}
+
+.searchlists {
+  list-style: none;
+}
+
+.navsticky {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

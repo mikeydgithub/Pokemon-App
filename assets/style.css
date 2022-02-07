@@ -28,3 +28,10 @@ footer {
     text-align: center;
 }
 
+.searchform {
+  padding: 20px 40px;
+}
+
+.searchlists {
+  list-style: none;
+}

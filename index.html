@@ -57,7 +57,9 @@
                 <form id="search-user-form">
                 <h4 class="">Search For Partner</h4>
                     <div class="">
-                        <input class="" id="search-user" placeholder="Enter user profile here" autofocus="true"/>
+                        <input class="" id="search-user" placeholder="Enter user profile here" autocomplete="off" autofocus="true" list="users"/>
+                        <datalist id="users">     
+                        </datalist>
                         <button class="" id="userSearchBtn">
                         <span class="">Enter</span>
                         </button>
@@ -66,19 +68,7 @@
                 <li class="searchlists" id="searchedUserLi"></li>
             </section>
             <!-- GitHub Users Search End -->
-    
-            <!-- Weather App Start | Search For City Start -->
-            <section id="search-form">
-                <form id="searchCityForm">
-                    <h4 class="">Search for a City</h4>
-                    <div class="">
-                        <input class="" id="searchCity" placeholder="Enter city here" autofocus="true" />
-                        <button class="" id="searchCityForm"><span class="">Enter</span></button>
-                    </div>
-                </form>
-                <li class="searchlists" id="searchedCityLi"></li>
-            </section>
-    </div>
+        </div>
 
         <!-- Display For Both GitHub Users and Weather Containers -->
         <div class="users-weather-github-container blue-grey darken-1 col s6">
@@ -89,27 +79,9 @@
                     <h3 class=""><span id="userName">Name of GitHub User</span></h3>
                 </div>
             </section>
-            <!-- GitHub Users Display End -->
-
-            <!-- Weather Display -->
-            <section class="row">
-                <div id="display-weather-info">
-                    <div class="">
-                        <h3 class="">
-                            <span id="cityName">Name of City</span>
-                            <span class="" id="currentdate"> MM/DD/YY</span>
-                            <img class="weather-icon" id="weatherIconToday" src="">
-                        </h3>
-                        <p class="card-text">Temperature:<span id="tempToday">--</span></p>
-                        <p class="card-text">Humidity:<span id="humidityToday">--</span></p>
-                        <p class="card-text">Wind Speed:<span id="windSpeedToday">--</span></p>
-                        <p class="card-text">UV Index:<span id="UVIndexToday">--</span></p>
-                    </div>
-                </div>
-            </section>
         </div>
     </div>  
-    <!-- Weather Display End | Weather App End -->
+    <!-- GitHub Users Display End -->
 
 
   <!-- Git Back To Us Start -->
@@ -150,21 +122,16 @@
             </div>
         </container>
     </section>
+
+     <!-- footer -->
     <footer class="footer">
         <h6>🔌 Submitted on GitHub with GitBash by Git Connect. 🔌</h6>
     </footer>
-    <!-- <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
-        frameborder="0" style="border:0" allowfullscreen>
-      </iframe> -->
-  <!-- "reach out" end -->
-  <!-- footer -->
-  <!-- footer end -->
+    <!-- footer end -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="assets/weatherscript.js"></script>
-  <script src="assets/githubUser.js"></script>
+  <script src="assets/githubuser.js"></script>
   <script src="assets/script.js"></script>
 </body>
 

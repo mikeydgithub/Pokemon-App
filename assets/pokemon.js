@@ -6,11 +6,11 @@ var nameInputEl = document.querySelector("#search-user");
 // Search username for repos
 // if user has amount of repos 1-10, 10-25, 25-50, 50-75, 75+
 // Display different pokemon for each amount
-// Repos 1-10=Pokemon 1-25
-// 10-25=25-50
-// 25-50=50-75
-// 50-75=75-100
-// 75+=100-150
+// Repos 1-10=LvL 1 Pokemon
+// 10-25=LvL 2 Pokemon
+// 25-50=LvL 3 Pokemon
+// 50-75= No Evolution Pokemon
+// 75+= legendary Pokemon
 
 var getUser = function (user) {
     // format the github api url

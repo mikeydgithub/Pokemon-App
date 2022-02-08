@@ -3,15 +3,6 @@ var nameInputEl = document.querySelector("#search-user");
 var repoContainerEl = document.querySelector("#repos-container");
 var repoSearchTerm = document.querySelector("#repo-search-term");
 
-// if #repo-search-term span gets displayed: 
-// Search username for repos
-// if user has amount of repos 1-10, 10-25, 25-50, 50-75, 75+
-// Display different pokemon for each amount
-// Repos 1-10=Pokemon 1-25
-// 10-25=25-50
-// 25-50=50-75
-// 50-75=75-100
-// 75+=100-150
 
 var getUser = function (user) {
     // format the github api url

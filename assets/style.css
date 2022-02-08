@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .brand-logo {
     font-family: 'Pokemon Solid', sans-serif;
     text-align: center;
@@ -26,7 +27,6 @@
     text-align: center;
     padding-top: 60px;
     text-align: center;
-    padding-top: 60px;
 }
 /*Header Content End*/
 
@@ -41,7 +41,9 @@
     border: 3px solid;
     border-radius: 3px;
     width: 50%;
-    margin: 50px auto;
+    margin-bottom: 50px;
+    margin-left: 385px;
+
 }
 /*Search Form End */
 
@@ -55,8 +57,8 @@
     border: 3px solid;
     border-radius: 3px;
     width: 50%;
-    margin: 0 auto;
     display: block;
+    margin-left: 385px;
 }
 /*Users and Weather Github Container End*/
 

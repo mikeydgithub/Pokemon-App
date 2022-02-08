@@ -1,5 +1,18 @@
 const pokedex = document.getElementById("pokedex");
-console.log(pokedex)
+var userFormEl = document.querySelector("#search-user-form");
+var nameInputEl = document.querySelector("#search-user");
+
+var getUser = function (user) {
+    // format the github api url
+    var apiUrl = "https://api.github.com/users/" + user + "repos";
+
+    // make a request to the url
+    fetch(apiUrl).then(function (response) {
+        response.json().then(function (data) {
+            displayUser(data, user);
+        });
+    });
+};
 
 const fetchPokemon = () => {
 
@@ -27,6 +40,8 @@ const fetchPokemon = () => {
     
 };
 
+
+
 const displayPokemon = (pokemon) => {
     console.log(pokemon);
     const pokemonHTMLString = pokemon.map (
@@ -41,3 +56,5 @@ const displayPokemon = (pokemon) => {
 };
 
 fetchPokemon();
+
+userFormEl.addEventListener("submit", formSubmitHandler);

@@ -49,43 +49,40 @@
   <!-- hero/jumbotron end -->
 
   <!-- Main container for the main part of the page -->
-    <div class="main-containers col s12">
-        <main class="searchform col s6">
-            <!-- User and Weather Search Section -->
-            <div id="search-container" class="search-container blue-grey darken-1">
-            <!-- User Search Start-->
-                <section id="search-form">
-                    <form id="search-user-form">
-                    <h4 class="">Search For Partner</h4>
-                        <div class="">
-                            <input class="" id="search-user" placeholder="Enter user profile here" autofocus="true"/>
-                            <button class="" id="userSearchBtn">
-                            <span class="">Enter</span>
-                            </button>
-                        </div>
-                    </form>
-                    <li class="searchlists" id="searchedUserLi"></li>
-                </section>
-                <!-- GitHub Users Search End -->
-
-                <!-- Weather App Start | Search For City Start -->
-                <section id="search-form">
-                    <form id="searchCityForm">
-                        <h4 class="">Search for a City</h4>
-                        <div class="">
-                            <input class="" id="searchCity" placeholder="Enter city here" autofocus="true" />
-                            <button class="" id="searchCityForm"><span class="">Enter</span></button>
-                        </div>
-                    </form>
-                    <li class="searchlists" id="searchedCityLi"></li>
-                </section>
-            </div>
-        </main>
-        <!-- Search For City End -->
+    <div class="main-containers">
+        <!-- User and Weather Search Section -->
+        <div id="search-container" class="search-container col s6 blue-grey darken-1">
+        <!-- User Search Start-->
+            <section id="search-form">
+                <form id="search-user-form">
+                <h4 class="">Search For Partner</h4>
+                    <div class="">
+                        <input class="" id="search-user" placeholder="Enter user profile here" autofocus="true"/>
+                        <button class="" id="userSearchBtn">
+                        <span class="">Enter</span>
+                        </button>
+                    </div>
+                </form>
+                <li class="searchlists" id="searchedUserLi"></li>
+            </section>
+            <!-- GitHub Users Search End -->
+    
+            <!-- Weather App Start | Search For City Start -->
+            <section id="search-form">
+                <form id="searchCityForm">
+                    <h4 class="">Search for a City</h4>
+                    <div class="">
+                        <input class="" id="searchCity" placeholder="Enter city here" autofocus="true" />
+                        <button class="" id="searchCityForm"><span class="">Enter</span></button>
+                    </div>
+                </form>
+                <li class="searchlists" id="searchedCityLi"></li>
+            </section>
+    </div>
 
         <!-- Display For Both GitHub Users and Weather Containers -->
-        <main class="users-weather-github-container col s6 blue-grey darken-1">
-            <section class="row" id="display-windows">
+        <div class="users-weather-github-container blue-grey darken-1 col s6">
+            <section id="display-windows">
                 <!-- Playlist Display Start-->
                 <div id="user-display-info">
                     <div class="">
@@ -110,7 +107,7 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
     </div>  
     <!-- Weather Display End | Weather App End -->
 

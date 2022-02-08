@@ -33,16 +33,13 @@
   list-style: none;
 }
 
-.searchform {
-    display: inline-block;
-}
-
 .search-container {
+    display: inline-block;
     border: 3px solid;
     border-radius: 3px;
     width: auto;
     padding: 20px 40px;
-    margin: 20px;
+    margin: 50px;
 }
 /*Search Form End */
 
@@ -50,11 +47,10 @@
 .users-weather-github-container {
     display: inline-block;
     border: 3px solid;
-    border-radius: 5px;
-    width: 50%;
-    padding: 20px 10%;
+    border-radius: 3px;
+    width: auto;
+    padding: 20px 40px;
     margin: 50px;
-    left: 10%;
 }
 /*Users and Weather Github Container End*/
 
@@ -83,6 +79,25 @@ footer {
 /*Footer Section End*/
 
 /*Media query for different screens*/
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1260px){
+    .search-container {
+        display: flex;
+        border: 3px solid;
+        border-radius: 3px;
+        width: auto;
+        padding: 20px 40px;
+        margin: 50px;
+        align-content: center;
+    }
+    .users-weather-github-container {
+        display: flex;
+        border: 3px solid;
+        border-radius: 3px;
+        width: auto;
+        padding: 20px 40px;
+        margin: 50px;
+        align-content: center;
+    }
+}
 
     

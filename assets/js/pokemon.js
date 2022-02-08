@@ -1,28 +1,17 @@
 const pokedex = document.getElementById("pokedex");
-var userFormEl = document.querySelector("#search-user-form");
-var nameInputEl = document.querySelector("#search-user");
+
 
 // if #repo-search-term span gets displayed: 
 // Search username for repos
 // if user has amount of repos 1-10, 10-25, 25-50, 50-75, 75+
 // Display different pokemon for each amount
-// Repos 1-10=LvL 1 Pokemon
-// 10-25=LvL 2 Pokemon
-// 25-50=LvL 3 Pokemon
-// 50-75= No Evolution Pokemon
-// 75+= legendary Pokemon
+// Repos 1-10=Dookie Pokemon
+// 10-25=LvL 1 Pokemon
+// 25-50=LvL 2 Pokemon
+// 50-75= LvL 3 & No Evolution Pokemon
+// 75+= Legendary Pokemon
 
-var getUser = function (user) {
-    // format the github api url
-    var apiUrl = "https://api.github.com/users/" + user + "repos";
 
-    // make a request to the url
-    fetch(apiUrl).then(function (response) {
-        response.json().then(function (data) {
-            displayUser(data, user);
-        });
-    });
-};
 
 const fetchPokemon = () => {
 
@@ -47,15 +36,15 @@ const fetchPokemon = () => {
         }));
         displayPokemon(pokemon);
     });
-    
+
 };
 
 
 
 const displayPokemon = (pokemon) => {
     console.log(pokemon);
-    const pokemonHTMLString = pokemon.map (
-         pokeman  => `
+    const pokemonHTMLString = pokemon.map(
+        pokeman => `
     <li>
         <img src="${pokeman.image}"/>
         <h2>${pokeman.id}. ${pokeman.name}</h2>
@@ -67,4 +56,3 @@ const displayPokemon = (pokemon) => {
 
 fetchPokemon();
 
-userFormEl.addEventListener("submit", formSubmitHandler);

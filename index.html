@@ -53,14 +53,14 @@
       <!-- User and Weather Search Section -->
       <div class="container blue-grey darken-1 searchform" id="searchSection">
         <!-- User Search Start-->
-        <section class="" id="search-form">
+        <section id="user-search-form">
           <form class="col s5" id="search-user-form">
-            <h4 class="">Search For Partner</h4>
-            <div class="">
-              <input class="" id="search-user" autofocus="true" />
+            <h4>Search For Partner</h4>
+            <div>
+              <input id="search-user" autofocus="true" />
 
-              <button class="" id="userSearchBtn">
-                <span class="">Enter</span>
+              <button id="userSearchBtn">
+                <span>Search</span>
               </button>
             </div>
           </form>
@@ -69,14 +69,14 @@
         <!-- GitHub Users Search End -->
 
         <!-- Weather App Start | Search For City Start -->
-        <section class="" id="search-form">
+        <section id="weather-search-form">
           <form class="col s5" id="searchCityForm">
-            <h4 class="">Search for a City</h4>
-            <div class="">
-              <input class="" id="searchCity" autofocus="true" />
+            <h4>Search for a City</h4>
+            <div>
+              <input id="searchCity" autofocus="true" />
 
-              <button class="" id="searchCityForm">
-                <span class="">Enter</span>
+              <button id="searchCityForm">
+                <span>Enter</span>
               </button>
             </div>
           </form>
@@ -89,12 +89,12 @@
       <section class="row container" id="display-windows">
         <!-- Playlist Display Start-->
         <div id="repoSearchTerm" class="col s6">
-          <div class="">
+          <div>
             
               <h3 id="repoContainerEl">Name of GitHub User
                 <span id="repo-search-term"></span>
               </h3>
-              <div id="repos-container" class="list-group"></div>
+              <div id="repos-container"></div>
             
           </div>
         </div>
@@ -102,28 +102,11 @@
 
         <!-- Weather Display -->
         <div id="display-weather-info" class="col s6">
-          <div class="">
-            <h3 class="" style="height: 100px">
-              <span id="cityName">Name of City</span>
-              <span class="" id="currentdate"> MM/DD/YY</span>
-              <img class="weather-icon" id="weatherIconToday" src="">
-              </img>
-            </h3>
-            <p class="card-text">
-              Temperature:
-              <span id="tempToday">--</span>
-            </p>
-            <p class="card-text">
-              Humidity:
-              <span id="humidityToday">--</span>
-            </p>
-            <p class="card-text">
-              Wind Speed:
-              <span id="windSpeedToday">--</span>
-            </p>
-            <p class="card-text">
-              UV Index:
-              <span id="UVIndexToday">--</span>
+          <div>
+            <h3 style="height: 100px">
+              <span id="cityName">What Pokemon Are You?</span>
+              
+             
             </p>
           </div>
         </div>
@@ -185,9 +168,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="assets/weatherscript.js"></script>
+  <!--moment related script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/pokemon.js"></script>
   <script src="assets/githubUser.js"></script>
-  <script src="assets/script.js"></script>
+  
 </body>
 
 </html>

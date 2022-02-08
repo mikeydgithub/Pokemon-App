@@ -1,10 +1,15 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
 * {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+.brand-logo {
+    font-family: 'Pokemon Solid', sans-serif;
+    text-align: center;
+    width: 100%;
+}
 
 /*Nav Bar Start*/
 .navsticky {
@@ -26,43 +31,97 @@
 /*Header Content End*/
 
 
-
 /*Search Form Start */
 .searchlists {
   list-style: none;
 }
 
 .search-container {
-    display: inline-block;
+    display: block, flex;
     border: 3px solid;
     border-radius: 3px;
-    width: auto;
-    padding: 20px 40px;
-    margin: 50px;
+    width: 50%;
+    margin: 50px auto;
 }
 /*Search Form End */
 
+.mewtwo-pic {
+    width: 325px;
+    float: left;
+}
+
 /*Users and Weather Github Container Start*/
-.users-weather-github-container {
-    display: inline-block;
+.pokemon-container {
     border: 3px solid;
     border-radius: 3px;
-    width: auto;
-    padding: 20px 40px;
-    margin: 50px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
 }
 /*Users and Weather Github Container End*/
 
 /*Git Back To Us Start*/
-.gitback-to-us-container{
+
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
     margin: 0 auto 35px auto;
+    width: 50%;
+  }
+.secondary-border {
+    border-color: red;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: red;
-    justify-content: space-around;
     border: 3px solid;
-    border-radius: 1%;
-    width: 95%;
-    padding: 20px 10%;
-    margin: 50px;
+    border-radius: 3px;
+    margin: 0 200px;
+}
+  
+  .contact-info > * {
+    flex:1;
+    margin: 15px;
+}
+  
+  .contact-form input, .contact-form textarea{
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+  
+  .contact-form input:focus, .contact-form textarea:focus  {
+    background-color: rgba(255,255,255, 1);
+    outline:none;
+}
+  
+  .contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+  
+  .contact-form button:hover {
+    color: var(--primary-color);
+    background: #39a6ba;
 }
 
 /*Git Back To Us End*/
@@ -85,18 +144,31 @@ footer {
         border-radius: 3px;
         width: auto;
         padding: 20px 40px;
-        margin: 50px;
+        margin: 50px auto;
         align-content: center;
     }
-    .users-weather-github-container {
+    .pokemon-container {
         display: flex;
         border: 3px solid;
         border-radius: 3px;
         width: auto;
         padding: 20px 40px;
-        margin: 50px;
+        margin: 0 auto;
         align-content: center;
     }
+    .mewtwo-pic {
+        display: none;
+    }
 }
-
     
+@media screen and (max-width: 716px){   
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: red;
+        border: 3px solid;
+        border-radius: 3px;
+        margin: 0 auto;
+    } 
+}

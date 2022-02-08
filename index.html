@@ -17,11 +17,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
+<!-- Body Start -->
+
 <body class="blue-grey darken-4">
-  <nav class="blue-grey darken-2">
+  <nav class="blue-grey darken-2 navsticky">
     <div class="">
       <a href="#!" class="brand-logo blue-grey-text text-lighten-5">GitConnect🔌</a>
-      <a href="#" data-target="mobile-demo" class="">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
       <ul class="right hide-on-med-and-down">
@@ -40,72 +42,69 @@
   <!-- end navigation -->
 
   <!-- hero/jumbotron -->
-  <section class="container">
-    <div class="hero-cta">
-      <h3> Git Connected With Your Pokemon</h3>
+  <section <div class="header">
+    <h3> Git Connected With Your Pokemon</h3>
     </div>
   </section>
   <!-- hero/jumbotron end -->
 
   <!-- Main container for the main part of the page -->
-  <main>
-    <div>
-      <!-- User and Pokemon Search Section -->
-      <div class="blue-grey darken-1 searchform" id="searchSection">
-        <!-- User Search Start-->
-        <section id="user-search-form">
-          <form class="" id="search-user-form">
-            <h4>Search For Your Pokemon</h4>
-            <div>
-              <input id="search-user" autofocus="true" />
+  <div>
+    <!-- User and Pokemon Search Section -->
+    <div class="blue-grey darken-1 searchform" id="searchSection">
+      <!-- User Search Start-->
+      <section id="search-form">
+        <form class="" id="search-user-form">
+          <h4>Search For Your Pokemon</h4>
+          <div>
+            <input id="search-user" placeholder="Enter User Here" autofocus="true" />
 
-              <button id="userSearchBtn">
-                <span>Search</span>
-              </button>
-            </div>
-          </form>
-          <li class="" id="searchedUserLi"></li>
-        </section>
-        <!-- GitHub Users Search End -->
+            <button id="userSearchBtn">
+              <span>Search</span>
+            </button>
+          </div>
+        </form>
+        <li class="" id="searchedUserLi"></li>
+      </section>
+      <!-- GitHub Users Search End -->
 
       <!-- Display For Both GitHub Users and Pokemon Containers -->
       <section class="" id="display-windows">
         <!-- Playlist Display Start-->
         <div id="repoSearchTerm" class="col s6">
           <div>
-            
-              <h3 id="repoContainerEl">Name of GitHub User
-                <span id="repo-search-term"></span>
-              </h3>
-              <div id="repos-container"></div>
-            
+
+            <h3 id="repoContainerEl">Name of GitHub User: <span id="repo-search-term"></span></h3>
+            <div id="repos-container"></div>
+
           </div>
         </div>
         <!-- GitHub Users Display End -->
 
         <!-- Pokemon Display -->
-        <div id="display-weather-info" class="col s6">
+        <section class="row">
+        <div id="display-weather-info">
           <div>
-            <h3 style="height: 100px">
-              <span id="cityName">Your Pokemon</span>
-              
-             
-            </p>
+            <h3>
+              <span id="pokemon">Your Pokemon: </span>
+
+
+              </p>
           </div>
         </div>
       </section>
       <!-- Pokemon Display End | Pokemon App End -->
     </div>
-  </main>
-  <!-- "Reach Out" Start -->
-  <section id="reach-out" class="container contact">
-    <div class="flex-row">
-      <h2 class="section-title secondary-border container">
-        Git Back To Us
-      </h2>
-    </div>
-  </section>  
-  <container class="row container">
+
+    <!-- "Reach Out" Start -->
+    <section id="reach-out" class="container contact">
+      <div class="flex-row">
+        <h2 class="section-title secondary-border container">
+          Git Back To Us
+        </h2>
+      </div>
+    </section>
+    <container class="row container">
       <div class="contact-info col s6">
         <div>
           <h3>Git Connect</h3>
@@ -123,39 +122,39 @@
             E: <a href="mailto:info@gitconnect.io">info@gitconnect.io</a>
           </address>
         </div>
-       </div>
+      </div>
 
-        <div class="contact-form col s6">
-          <h3>Contact Us</h3>
-          <form>
-            <label for="contact-name">Your Name</label>
-            <input type="text" id="contact-name" placeholder="Your Name" />
+      <div class="contact-form col s6">
+        <h3>Contact Us</h3>
+        <form>
+          <label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" placeholder="Your Name" />
 
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" placeholder="Message"></textarea>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" placeholder="Message"></textarea>
 
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-  </container>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </container>
     <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
         frameborder="0" style="border:0" allowfullscreen>
       </iframe> -->
-  <!-- "reach out" end -->
-  <!-- footer -->
-  <footer class="container">
-    <h6>🔌 Submitted on GitHub with GitBash by Git Connect. 🔌</h6>
-  </footer>
-  <!-- footer end -->
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!--moment related script-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="assets/pokemon.js"></script>
-  <script src="assets/githubUser.js"></script>
-  
+    <!-- "reach out" end -->
+    <!-- footer -->
+    <footer class="container">
+      <h6>🔌 Submitted on GitHub with GitBash by Git Connect. 🔌</h6>
+    </footer>
+    <!-- footer end -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--moment related script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/pokemon.js"></script>
+    <script src="assets/githubUser.js"></script>
+
 </body>
 
 </html>

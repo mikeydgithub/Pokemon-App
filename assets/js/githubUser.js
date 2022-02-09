@@ -2,6 +2,7 @@ var userFormEl = document.querySelector("#search-user-form");
 var nameInputEl = document.querySelector("#search-user");
 var repoContainerEl = document.querySelector("#repos-container");
 var repoSearchTerm = document.querySelector("#repo-search-term");
+var username = "";
 
 
 var getUser = function (user) {
@@ -39,7 +40,7 @@ var addUserName = function(user) {
 var formSubmitHandler = function (event) {
     event.preventDefault();
     // get value from input element
-    var username = nameInputEl.value.trim();
+    username = nameInputEl.value.trim();
 
     if (username) {
         getUser(username);

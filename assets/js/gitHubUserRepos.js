@@ -1,3 +1,6 @@
+var gitUser = document.getElementById("#repo-search-term");
+var searchForm = document.getElementById("#search-form")
+
 var getUserRepos = function (user) {
     // format the github api url
     var apiUrl = "https://api.github.com/users/" + user + "/repos";
@@ -11,3 +14,9 @@ var getUserRepos = function (user) {
 };
 
 getUserRepos();
+
+
+
+
+
+

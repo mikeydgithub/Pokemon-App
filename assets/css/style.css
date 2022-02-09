@@ -28,6 +28,21 @@
     padding-top: 60px;
     text-align: center;
 }
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+    80% {
+        transform: translateY(-6px);
+    }
+}
 /*Header Content End*/
 
 
@@ -50,6 +65,15 @@
 .mewtwo-pic {
     width: 325px;
     float: left;
+}
+
+.mewtwo-pic:hover {
+    animation: bounce 0.5s linear;
+}
+
+#pokedex li img:hover {
+    animation: bounce 0.5s linear;
+
 }
 
 /*Users and Weather Github Container Start*/

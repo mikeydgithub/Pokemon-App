@@ -1,3 +1,6 @@
+# Story
+* As a coder I often wonder what I would be as a pokemon.
+
 ## Purpose
 * Link your Pokemon profile to your repository. You do this to share with your friends and peers to find out who is what pokemon. 
 
@@ -18,5 +21,3 @@
 * Responive layout that can work on mobile devices.
 * Uses client-side storage to store persistent data.
 
-# Story
-* As a coder I often wonder what I would be as a pokemon.

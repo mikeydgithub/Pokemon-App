@@ -5,157 +5,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔌GitConnect🔌</title>
+  <title>GitPokemon</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
 </head>
 
-<!-- Body Start -->
-
-<body class="blue-grey darken-4">
+<!-- Body Start-->
+<body class="blue darken-2">
   <nav class="blue-grey darken-2 navsticky">
-    <div class="">
-      <a href="#!" class="brand-logo blue-grey-text text-lighten-5">GitConnect🔌</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo blue-grey-text text-lighten-5">GitPokemon</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Connections</a></li>
-        <li><a href="#">The Weather</a></li>
+        <li><a href="#">Pokemon</a></li>
         <li><a href="#">Git Back To Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#">Connections</a></li>
-    <li><a href="#">The Weather</a></li>
-    <li><a href="#">Git Back To Us</a></li>
-  </ul>
+  <div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Connections</a></li>
+      <li><a href="#">Pokemon</a></li>
+      <li><a href="#">Git Back To Us</a></li>
+    </ul>
+  </div>
   <!-- end navigation -->
 
-  <!-- hero/jumbotron -->
-  <section <div class="header">
-    <h3> Git Connected With Your Pokemon</h3>
+  <!--Header Start-->
+  <header>
+    <div class="header">
+      <h3>Create a Pokemon Using Your Own Repositories!</h3>
     </div>
-  </section>
-  <!-- hero/jumbotron end -->
+  </header>
+  <!--Header End-->
 
-  <!-- Main container for the main part of the page -->
-  <div>
-    <!-- User and Pokemon Search Section -->
-    <div class="blue-grey darken-1 searchform" id="searchSection">
-      <!-- User Search Start-->
-      <section id="search-form">
-        <form class="" id="search-user-form">
-          <h4>Search For Your Pokemon</h4>
+<!-- User Search Section Start -->
+<div>
+  <img src="assets\pictures\mewtwo-pokemon.png" class="mewtwo-pic left-align">
+  <div id="search-container" class="search-container center-align blue-grey darken-1">
+    <section id="search-form">
+      <form id="search-user-form">
+        <h4><u>Search For Your Pokemon</u></h4>
           <div>
-            <input id="search-user" placeholder="Enter User Here" autofocus="true" />
-
-            <button id="userSearchBtn">
-              <span>Search</span>
-            </button>
+            <input id="search-user" placeholder="Enter user profile here" autocomplete="off" autofocus="true" list="users"/>
+            <datalist id="users"></datalist>
+            <button id="userSearchBtn"><span>Enter</span></button>
           </div>
-        </form>
-        <li class="" id="searchedUserLi"></li>
-      </section>
-      <!-- GitHub Users Search End -->
+      </form>
+        <li class="searchlists" id="searchedUserLi"></li>
+    </section>
+  </div>
+</div>
+  <!-- User Search Section End -->
 
-      <!-- Display For Both GitHub Users and Pokemon Containers -->
-      <section class="" id="display-windows">
-        <!-- Playlist Display Start-->
+  <!-- GitHub User and Pokemon Start  -->
+  <div class="pokemon-container blue-grey darken-1 col s6 center-align">
+    <section id="display-windows">
+      <div id="user-display-info">
         <div id="repoSearchTerm" class="col s6">
           <div>
-
-            <h3 id="repoContainerEl">Name of GitHub User: <span id="repo-search-term"></span></h3>
+            <h4><u>Name of GitHub User:</u><span></span></h4>
+            <div id="repo-search-term"></div>
             <div id="repos-container"></div>
-
           </div>
-        </div>
-        <!-- GitHub Users Display End -->
-
-        <!-- Pokemon Display -->
-        <section class="row">
-          <div id="display-weather-info">
-            <div>
-              <h3>
-                <span>Your Pokemon: </span>
-              </h3>
-              <div id="pokedex"></div>
-
-
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- Pokemon Display End | Pokemon App End -->
-    </div>
-
-    <!-- "Reach Out" Start -->
-    <section id="reach-out" class="container contact">
-      <div class="flex-row">
-        <h2 class="section-title secondary-border container">
-          Git Back To Us
-        </h2>
-      </div>
-    </section>
-    <container class="row container">
-      <div class="contact-info col s6">
         <div>
-          <h3>Git Connect</h3>
-          <p>
-            Any questions or concerns before signing up?
-            <br />
-            Let us know and we'll be happy to talk to you!
-          </p>
-
-          <address>
-            55 Main Street <br />
-            Some Town, Ca <br />
-            12345<br />
-            P: 555.GIT.CONNECT (555.786.2839)<br />
-            E: <a href="mailto:info@gitconnect.io">info@gitconnect.io</a>
-          </address>
+          <div id="pokedex"></div>
         </div>
+    </section>
+  </div>
+  <!-- GitHub User and Pokemon End -->
+
+  <!-- Reach Out Start -->
+  <section id="reach-out" class="contact">
+    <h2 class="section-title secondary-border">Reach Out</h2>
+    <div class="contact-info">
+        <div>
+          <h3>GitPokemon</h3>
+          <Creators>
+            <u>Created By</u><br />
+            Mike Diamond<br />
+            Adrian Henry<br />
+            Johnny Williams<br />
+            Diego<br />
+          </Creators>
       </div>
+  <!--Reach Out End-->
+      
+  <!--Contact Form Start -->      
+        <div class="contact-form">
+          <h3>Contact Us</h3>
+          <form>
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" />
+      
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
+      
+            <button type="submit">Submit</button>
+          </form>
+  </section>
+  <!--Contact Form End-->  
 
-      <div class="contact-form col s6">
-        <h3>Contact Us</h3>
-        <form>
-          <label for="contact-name">Your Name</label>
-          <input type="text" id="contact-name" placeholder="Your Name" />
+  <!--Footer Start-->
+  <footer class="footer">
+    <h6> Submitted on GitHub with GitBash </h6>
+  </footer>
+  <!--Footer End-->
 
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" placeholder="Message"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </container>
-    <!-- <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
-        frameborder="0" style="border:0" allowfullscreen>
-      </iframe> -->
-    <!-- "reach out" end -->
-    <!-- footer -->
-    <footer class="container">
-      <h6>🔌 Submitted on GitHub with GitBash by Git Connect. 🔌</h6>
-    </footer>
-    <!-- footer end -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!--moment related script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/pokemon.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/pokemon.js"></script>
 </body>
 
 </html>

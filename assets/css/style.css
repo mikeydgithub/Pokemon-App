@@ -1,38 +1,175 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
 * {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-header, h1 {
-    color: black;
-}
 
-.hero-cta, h2 {
+.brand-logo {
+    font-family: 'Pokemon Solid', sans-serif;
     text-align: center;
-
-}
-
-.container, .contact {
-    text-align: center;
-}
-
-footer {
     width: 100%;
-    font-size: 1px;
 }
 
-.card-text {
+/*Nav Bar Start*/
+.navsticky {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*Nav Bar End*/
+
+/*Header Content Start */
+.header{
+    color: black;
+    text-align: center;
+    padding-top: 60px;
     text-align: center;
 }
+/*Header Content End*/
 
-.cityName, .songName {
-    text-align: center;
-}
 
-.searchform {
-  padding: 20px 40px;
-}
-
+/*Search Form Start */
 .searchlists {
   list-style: none;
 }
 
+.search-container {
+    display: block, flex;
+    border: 3px solid;
+    border-radius: 3px;
+    width: 50%;
+    margin-bottom: 50px;
+    margin-left: 385px;
+
+}
+/*Search Form End */
+
+.mewtwo-pic {
+    width: 325px;
+    float: left;
+}
+
+/*Users and Weather Github Container Start*/
+.pokemon-container {
+    border: 3px solid;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    margin-left: 385px;
+}
+/*Users and Weather Github Container End*/
+
+/*Git Back To Us Start*/
+
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+.secondary-border {
+    border-color: red;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: red;
+    border: 3px solid;
+    border-radius: 3px;
+    margin: 0 200px;
+}
+  
+  .contact-info > * {
+    flex:1;
+    margin: 15px;
+}
+  
+  .contact-form input, .contact-form textarea{
+    border: 5px solid;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+  
+  .contact-form input:focus, .contact-form textarea:focus  {
+    background-color: white;
+    outline:none;
+}
+  
+  .contact-form button {
+    width: 100%;
+    border: 5px solid;
+    background:rgba(160, 13, 13, 0.527) ;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+  
+  .contact-form button:hover {
+    color: var(--primary-color);
+    background: #39a6ba;
+}
+
+/*Git Back To Us End*/
+
+/*Footer Section Start*/
+footer {
+    width: 100%;
+    font-size: 5px;
+    margin-top: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+/*Footer Section End*/
+
+/*Media query for different screens*/
+@media screen and (max-width: 728px){
+    .search-container {
+        display: flex;
+        border: 3px solid;
+        border-radius: 3px;
+        width: 80%;
+        padding: 20px 40px;
+        margin: 50px auto;
+        align-content: center;
+    }
+    .pokemon-container {
+        display: flex;
+        border: 3px solid;
+        border-radius: 3px;
+        width: 80%;
+        padding: 20px 40px;
+        margin: 0 auto;
+        align-content: center;
+    }
+    .mewtwo-pic {
+        width: 80%;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: red;
+        border: 3px solid;
+        border-radius: 3px;
+        margin: 0 auto;
+    } 
+}

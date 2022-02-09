@@ -22,8 +22,8 @@
 * Uses client-side storage to store persistent data.
 
 ## Links
-*
-*
+* https://github.com/mikeydgithub/Group_project
+* Hosted URL when finished
 
 ## Webpage
 ![Readmeimage](https://user-images.githubusercontent.com/94988620/153309602-50314ed3-4799-45b9-8863-60ef5ae45c6e.JPG)

@@ -8,9 +8,9 @@
 // 50-75= LvL 3 & No Evolution Pokemon
 // 75+= Legendary Pokemon
 
-const pokedex = document.getElementById("#pokedex");
-var gitUser = document.getElementById("#repo-search-term");
-var searchForm = document.getElementById("#search-form");
+const pokedex = document.getElementById("pokedex");
+var gitUser = document.getElementById("repo-search-term");
+var searchForm = document.getElementById("search-form");
 var userFormEl = document.querySelector("#search-user-form");
 var nameInputEl = document.querySelector("#search-user");
 var repoContainerEl = document.querySelector("#repos-container");
@@ -47,6 +47,7 @@ var getUser = function (user) {
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
             displayUser(data, user);
+            console.log(data)
         });
     });
 };
@@ -90,6 +91,7 @@ var displayUser = function (repos, searchTerm) {
     repoContainerEl.textContent = "";
     repoSearchTerm.textContent = searchTerm;
     // loop over repos
+    console.log(repos.public_repos)
     for (var i = 0; i < repos.length; i++) {
         // format repo name
         var repoName = repos[i].owner.login + "/" + repos[i].name;
@@ -100,6 +102,7 @@ var displayUser = function (repos, searchTerm) {
 
         // append to container
         repoEl.appendChild(titleEl);
+
     }
 };
 

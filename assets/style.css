@@ -63,10 +63,9 @@
 /*Users and Weather Github Container End*/
 
 /*Git Back To Us Start*/
-
 .section-title {
     font-size: 48px;
-    color: var(--secondary-color);
+    color: black;
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -122,7 +121,7 @@
 }
   
   .contact-form button:hover {
-    color: var(--primary-color);
+    color: crimson;
     background: #39a6ba;
 }
 

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
 </head>
 
 <!-- Body Start-->
@@ -37,20 +38,21 @@
   </div>
   <!-- end navigation -->
 
-  <!-- hero/jumbotron -->
+  <!--Header Start-->
   <header>
     <div class="header">
       <h3>Create a Pokemon Using Your Own Repositories!</h3>
     </div>
   </header>
-  <!-- hero/jumbotron end -->
-  <!-- User Search Section Start -->
+  <!--Header End-->
+
+<!-- User Search Section Start -->
 <div>
   <img src="assets\pictures\mewtwo-pokemon.png" class="mewtwo-pic left-align">
   <div id="search-container" class="search-container center-align blue-grey darken-1">
     <section id="search-form">
       <form id="search-user-form">
-        <h4><u>Search For Partner</u></h4>
+        <h4><u>Search For Your Pokemon</u></h4>
           <div>
             <input id="search-user" placeholder="Enter user profile here" autocomplete="off" autofocus="true" list="users"/>
             <datalist id="users"></datalist>
@@ -67,15 +69,19 @@
   <div class="pokemon-container blue-grey darken-1 col s6 center-align">
     <section id="display-windows">
       <div id="user-display-info">
+        <div id="repoSearchTerm" class="col s6">
+          <div>
+            <h4 id="repoContainerEl"><u>Name of GitHub User:</u><span id="repo-search-term"></span></h4>
+            <div id="repos-container"></div>
+          </div>
         <div>
-          <h4><span id="userName"><u>Pokemon and User</u></span></h4>
+          <div id="pokedex"></div>
         </div>
     </section>
   </div>
   <!-- GitHub User and Pokemon End -->
 
-
-  <!-- Git Back To Us Start -->
+  <!-- Reach Out Start -->
   <section id="reach-out" class="contact">
     <h2 class="section-title secondary-border">Reach Out</h2>
     <div class="contact-info">
@@ -89,8 +95,9 @@
             Diego<br />
           </Creators>
       </div>
+  <!--Reach Out End-->
       
-<!-- "contact-form"-->      
+  <!--Contact Form Start -->      
         <div class="contact-form">
           <h3>Contact Us</h3>
           <form>
@@ -103,16 +110,17 @@
             <button type="submit">Submit</button>
           </form>
   </section>
+  <!--Contact Form End-->  
 
-  <!-- footer -->
+  <!--Footer Start-->
   <footer class="footer">
     <h6> Submitted on GitHub with GitBash </h6>
   </footer>
-  <!-- footer end -->
+  <!--Footer End-->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="assets/githubuser.js"></script>
-  <script src="assets/script.js"></script>
+  <script src="assets/pokemon.js"></script>
 </body>
 
 </html>

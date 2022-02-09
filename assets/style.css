@@ -94,27 +94,27 @@
 }
   
   .contact-form input, .contact-form textarea{
-    border: 1px solid var(--secondary-color);
+    border: 5px solid;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--secondary-color);
+    color: black;
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
+    background-color: white;
 }
   
   .contact-form input:focus, .contact-form textarea:focus  {
-    background-color: rgba(255,255,255, 1);
+    background-color: white;
     outline:none;
 }
   
   .contact-form button {
     width: 100%;
-    border: none;
-    background: var(--primary-color);
+    border: 5px solid;
+    background:rgba(160, 13, 13, 0.527) ;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -139,12 +139,12 @@ footer {
 /*Footer Section End*/
 
 /*Media query for different screens*/
-@media screen and (max-width: 1260px){
+@media screen and (max-width: 728px){
     .search-container {
         display: flex;
         border: 3px solid;
         border-radius: 3px;
-        width: auto;
+        width: 80%;
         padding: 20px 40px;
         margin: 50px auto;
         align-content: center;
@@ -153,17 +153,16 @@ footer {
         display: flex;
         border: 3px solid;
         border-radius: 3px;
-        width: auto;
+        width: 80%;
         padding: 20px 40px;
         margin: 0 auto;
         align-content: center;
     }
     .mewtwo-pic {
-        display: none;
+        width: 80%;
+        align-self: center;
+        margin: 0 auto;
     }
-}
-    
-@media screen and (max-width: 716px){   
     .contact-info {
         display: flex;
         justify-content: space-between;
@@ -174,3 +173,4 @@ footer {
         margin: 0 auto;
     } 
 }
+

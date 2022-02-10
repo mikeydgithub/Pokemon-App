@@ -1,6 +1,6 @@
 # GitPokemon
 
-# Story
+## Story
 * As a coder I often wonder what I would be as a pokemon.
 
 ## Purpose
@@ -30,7 +30,7 @@
 ## Webpage
 ![Readmeimage](https://user-images.githubusercontent.com/94988620/153309602-50314ed3-4799-45b9-8863-60ef5ae45c6e.JPG)
 
-Made By: 
+# Made By: 
 * Mike Diamond
 * Diego 
 * Adiran Henry

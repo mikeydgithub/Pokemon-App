@@ -44,5 +44,5 @@
 # Made By: 
 * Mike Diamond
 * Diego Restreo
-* Adiran Henry
+* Adrian Henry
 * Johnny Williams

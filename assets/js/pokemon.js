@@ -111,7 +111,14 @@ var formSubmitHandler = function (event) {
         // Add username (if new) to LocalStorage and githubUsr array
         addUserName(username);
     } else {
-        alert("Please enter a GitHub username");
+
+        $(document).ready(function(){
+        
+            $('.modal').modal();
+     
+        });
+        // alert("Please enter a GitHub username");
+        
     }
     console.log(event);
 };
@@ -194,6 +201,32 @@ var displayPokemon = (pokeman) => {
     `
     pokedex.innerHTML = pokemonHTMLString;
 };
+
+// New code for modal Start
+/*
+$(document).keypress(function (e) {
+    if (e.which == 13) {
+        signIn();
+    }
+});
+$(document).ready(function () {
+//Initialize Dialog
+$('.modal').modal();
+});
+
+var app = angular.module("FireCart", []);
+app.controller("AuthController", function($scope) {
+
+//Authentication
+$scope.authenticateUser = function() {
+console.log("Email"+     $scope.user.email + " Pass" +    $scope.user.password)
+Materialize.toast("Email: "+     $scope.user.email + " Pass: " +    $scope.user.password, 4000) 
+
+}
+});
+*/
+// New code for modal Start
+
 
 userFormEl.addEventListener("submit", formSubmitHandler);
 

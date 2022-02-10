@@ -25,6 +25,35 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
 });
 
+// Array to store GitHub users history
+var githubUsr = [];
+
+// append an user in the option list for the "Search For Your Pokemon" field
+var createUser = function (user) {
+
+    // append user option to parent users
+    $("#users").append("<option value='" + user + "'>");
+
+}
+
+// get the user names from localStorage ghUsers to add as users in the list for the "Search for Partner" field
+var usersLs = JSON.parse(localStorage.getItem("ghUsers"));
+
+// if GitHub users in localStorage
+
+if (usersLs) {
+    // if GitHub users in localStorage create user options
+    var i = 0;
+
+    // then loop over array to load users
+    $.each(usersLs, function () {
+        // asign values from local storage to users array
+        githubUsr[i] = usersLs[i];
+        createUser(githubUsr[i]);
+        i++;
+    });
+};
+
 var getUserRepos = function (user) {
     // format the github api url
     var apiUrl = "https://api.github.com/users/" + user + "/repos";
@@ -92,10 +121,11 @@ var formSubmitHandler = function (event) {
     if (username) {
         getUser(username);
         nameInputEl.value = "";
+        addUserName(username);
     } //else 
-       // alert("Please enter a GitHub username");
-    
-    //console.log(event);
+    // alert("Please enter a GitHub username");
+
+    console.log(event);
 };
 
 var displayUser = function (repos, searchTerm) {
@@ -156,13 +186,13 @@ var fetchKantoPokemon = () => {
             type: data.types.map((type) => type.type.name).join(', ')
 
         }));
-      
-            var randPokeman = pokemon[Math.floor(Math.random() * pokemon.length)]
-            
-            displayPokemon(randPokeman);
-       
+
+        var randPokeman = pokemon[Math.floor(Math.random() * pokemon.length)]
+
+        displayPokemon(randPokeman);
+
     });
-    
+
 };
 
 

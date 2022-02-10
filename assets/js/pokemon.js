@@ -16,10 +16,10 @@ var nameInputEl = document.querySelector("#search-user");
 var repoContainerEl = document.querySelector("#repos-container");
 var repoSearchTerm = document.querySelector("#repo-search-term");
 var username = "";
-var lvl1Pokemon = ["1, 4, 7, 11, 14, 17, 20, 22, 23, 27, 29, 32, 35, 37, 39, 42, 43, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 74, 84, 92, 129"]
-var lvl2Pokemon = ["2, 5, 8, 12, 15, 18, 24, 25, 28, 30, 33, 36, 40, 44, 47, 49, 51, 53, 55, 57, 59, 61, 64, 67, 70, 72, 75, 77, 79, 81, 83, 85, 86, 88, 90, 93, 96, 98, 100, 102, 104, 109, 111, 116, 120, 133, 137, 138, 140, 147"]
-var lvl3Pokemon = ["3, 6, 9, 25, 31, 34, 38, 45, 62, 65, 68, 71, 73, 76, 78, 80, 82, 87, 89, 91, 84, 95, 97, 99, 101, 103, 105, 106, 107, 108, 110, 112, 113, 114, 115, 117, 119, 121, 122, 123, 124, 125, 126, 127, 128, 134, 135, 136, 137, 139, 141"]
-var legendaries = ["26, 130, 131, 132, 142, 143, 144, 145, 146, 147, 148, 149, 150"]
+var lvl1Pokemon = [1, 4, 7, 11, 14, 17, 20, 22, 23, 27, 29, 32, 35, 37, 39, 42, 43, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 74, 84, 92, 129]
+var lvl2Pokemon = [2, 5, 8, 12, 15, 18, 24, 25, 28, 30, 33, 36, 40, 44, 47, 49, 51, 53, 55, 57, 59, 61, 64, 67, 70, 72, 75, 77, 79, 81, 83, 85, 86, 88, 90, 93, 96, 98, 100, 102, 104, 109, 111, 116, 120, 133, 137, 138, 140, 147]
+var lvl3Pokemon = [3, 6, 9, 25, 31, 34, 38, 45, 62, 65, 68, 71, 73, 76, 78, 80, 82, 87, 89, 91, 84, 95, 97, 99, 101, 103, 105, 106, 107, 108, 110, 112, 113, 114, 115, 117, 119, 121, 122, 123, 124, 125, 126, 127, 128, 134, 135, 136, 137, 139, 141]
+var legendaries = [26, 130, 131, 132, 142, 143, 144, 145, 146, 147, 148, 149, 150]
 
 $(document).ready(function () {
     $('.sidenav').sidenav();
@@ -28,16 +28,28 @@ $(document).ready(function () {
 var getUserRepos = function (user) {
     // format the github api url
     var apiUrl = "https://api.github.com/users/" + user + "/repos";
-
-    // make a request to the url
-    fetch(apiUrl).then(function (response) {
-        response.json().then(function (data) {
-            console.log(data);
+    console.log(user)
+    // make a get request to url
+    fetch(apiUrl)
+        .then(function (response) {
+            // request was successful
+            if (response.ok) {
+                console.log(response);
+                response.json().then(function (data) {
+                    console.log(data);
+                    displayRepos(data, user);
+                });
+            } else {
+                alert("Error: " + response.statusText);
+            }
+        })
+        .catch(function (error) {
+            alert("Unable to connect to GitHub");
         });
-    });
 };
 
-getUserRepos();
+
+//getUserRepos();
 
 var getUser = function (user) {
     // format the github api url
@@ -91,12 +103,22 @@ var displayUser = function (repos, searchTerm) {
     repoContainerEl.textContent = "";
     repoSearchTerm.textContent = searchTerm;
     // loop over repos
-    if (repos.public_repos = 1 && repos.public_repos <=10) {
-        fetchPokemon(lvl1Pokemon);
-    } else {
-        (repos.public_repos = 10 && repos.public_repos <=25)
-        fetchPokemon(lvl2Pokemon)
-        
+    if (repos.public_repos >= 0 && repos.public_repos <= 25) {
+        fetchKantoPokemon(lvl1Pokemon);
+
+
+    } else if (repos.public_repos > 25 && repos.public_repos <= 50) {
+
+        fetchKantoPokemon(lvl2Pokemon)
+
+    } else if (repos.public_repos > 50 && repos.public_repos <= 75) {
+
+        fetchKantoPokemon(lvl3Pokemon)
+
+    } else if (repos.public_repos > 75) {
+
+        fetchKantoPokemon(legendaries)
+
     }
     console.log(repos.public_repos)
     for (var i = 0; i < repos.length; i++) {
@@ -113,7 +135,7 @@ var displayUser = function (repos, searchTerm) {
     }
 };
 
-var fetchPokemon = () => {
+var fetchKantoPokemon = () => {
 
     var promises = [];
     for (let i = 1; i <= 150; i++) {
@@ -151,6 +173,10 @@ var fetchPokemon = () => {
 };
 
 
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 
 var displayPokemon = (pokeman) => {
     console.log(pokeman);
@@ -165,7 +191,8 @@ var displayPokemon = (pokeman) => {
     pokedex.innerHTML = pokemonHTMLString;
 };
 
+
 userFormEl.addEventListener("submit", formSubmitHandler);
 
-//fetchPokemon();
+
 

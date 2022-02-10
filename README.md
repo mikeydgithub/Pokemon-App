@@ -1,5 +1,10 @@
 # GitPokemon
 
+## Elevator Pitch
+* Have you wanted to give your students rewards for using github?
+* Now you can! Give pokemon to your student based on how many repositories they have. Compare with your friends and colleagues.
+* Coming soon is social media integration and trading coming soon.
+
 ## Story
 * As a teacher I want to reward my students with how well they are doing on github.
 

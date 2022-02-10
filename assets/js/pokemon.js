@@ -92,10 +92,10 @@ var formSubmitHandler = function (event) {
     if (username) {
         getUser(username);
         nameInputEl.value = "";
-    } else {
-        alert("Please enter a GitHub username");
-    }
-    console.log(event);
+    } //else 
+       // alert("Please enter a GitHub username");
+    
+    //console.log(event);
 };
 
 var displayUser = function (repos, searchTerm) {

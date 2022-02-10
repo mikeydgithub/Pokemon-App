@@ -1,33 +1,37 @@
-# Group_project
+# GitPokemon
 
-# Requirements
+## Story
+* As a coder I often wonder what I would be as a pokemon.
 
+## Purpose
+* Link your Pokemon profile to your repository. You do this to share with your friends and peers to find out who is what pokemon. 
 
+## Built With
+* Javascript
+* HTML
+* CSS
 
-* Use a CSS framework other than Bootstrap.
+## How it works
+* Enter your own gitHub profile name or someon elses.
+* After clicking enter you will be chosen a pokemon based on how many repositories you have.
+* A pokemon with it's image and attributes will appear.
+* Rank how many repositories you have between your friends and show off.
 
-* Be deployed to GitHub Pages.
+## Results
+* A website utilitzing server API(s) from Pokemon and gitHub. 
+* Takes CSS styling from Materalize.
+* Responive layout that can work on mobile devices.
+* Uses client-side storage to store persistent data.
 
-* Be interactive (i.e., accept and respond to user input).
+## Links
+* https://github.com/mikeydgithub/Group_project
+* Hosted URL when finished
 
-* Use at least two server-side APIs.
+## Webpage
+![Readmeimage](https://user-images.githubusercontent.com/94988620/153309602-50314ed3-4799-45b9-8863-60ef5ae45c6e.JPG)
 
-* Does not use alerts, confirms, or prompts (use modals).
-
-* Use client-side storage to store persistent data.
-
-* Be responsive.
-
-* Have a polished UI.
-
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-* Finally, you must add your project to the portfolio that you created in Module 2.
-
-
-
-# Story
-As an average coder, I want to schedule and track the weather for my workouts.
-![Capture1](https://user-images.githubusercontent.com/94988620/152272201-f8f5d0f4-822a-4d2a-a5b6-38508c454524.JPG)
+# Made By: 
+* Mike Diamond
+* Diego Restreo
+* Adiran Henry
+* Johnny Williams

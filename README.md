@@ -18,7 +18,7 @@
 * Rank how many repositories you have between your friends and show off.
 
 ## Results
-* A website utilitzing server API(s) from Pokemon and gitHub. 
+* A website utilitzing server API(s) from Pokemon and GitHub. 
 * Takes CSS styling from Materalize.
 * Responive layout that can work on mobile devices.
 * Uses client-side storage to store persistent data.

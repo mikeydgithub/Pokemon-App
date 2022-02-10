@@ -10,6 +10,7 @@
     font-family: 'Pokemon Solid', sans-serif;
     text-align: center;
     width: 100%;
+    text-shadow: 2px 2px 5px black;
 }
 
 /*Nav Bar Start*/
@@ -47,12 +48,16 @@
 }
 /*Search Form End */
 
+#search-user {
+    text-align: center;
+  }
+
 .mewtwo-pic {
     width: 325px;
     float: left;
 }
 
-/*Users and Weather Github Container Start*/
+/*Users and Pokemon Github Container Start*/
 .pokemon-container {
     border: 3px solid;
     border-radius: 3px;

@@ -1,7 +1,7 @@
 # GitPokemon
 
 ## Story
-* As a coder I often wonder what I would be as a pokemon.
+* As a teacher I want to profile pokemon for my students, so I can see their respotiroies.
 
 ## Purpose
 * Link your Pokemon profile to your repository. You do this to share with your friends and peers to find out who is what pokemon. 

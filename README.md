@@ -23,6 +23,12 @@
 * Responive layout that can work on mobile devices.
 * Uses client-side storage to store persistent data.
 
+
+## Directions for the future of the project
+* Add Social Media Integration.
+* Trading.
+* Adding diverse rarity.
+
 ## Links
 * https://github.com/mikeydgithub/Group_project
 * Hosted URL when finished

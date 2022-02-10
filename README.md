@@ -15,6 +15,7 @@
 * Javascript
 * HTML
 * CSS
+* JQuery
 
 ## How it works
 * Enter your own gitHub profile name or someon elses.

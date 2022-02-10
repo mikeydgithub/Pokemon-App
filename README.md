@@ -1,7 +1,7 @@
 # GitPokemon
 
 ## Story
-* As a teacher I want to profile pokemon for my students, so I can see their respotiroies.
+* As a teacher I want to reward my students with how well they are doing on github.
 
 ## Purpose
 * Link your Pokemon profile to your repository. You do this to share with your friends and peers to find out who is what pokemon. 

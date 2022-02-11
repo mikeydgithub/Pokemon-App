@@ -71,11 +71,11 @@
 }
 
 .mewtwo-pic:hover {
-    animation: bounce 05.s linear;
+    animation: bounce 0.5s linear;
 }
 
 #pokedex li img:hover {
-    animation: bounce 05.s linear;
+    animation: bounce 0.5s linear;
 }
 
 /*Users and Pokemon Github Container Start*/

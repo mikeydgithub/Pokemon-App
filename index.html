@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
+  <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
 </head>
 
 <!-- Body Start-->
@@ -29,8 +30,8 @@
   <div>
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#search-user-form">Search Form</a></li>
-      <li><a href="#">Pokemon</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#username-pokemon-box">Pokemon</a></li>
+      <li><a href="#contact-form">Contact Us</a></li>
     </ul>
   </div>
   <!-- end navigation -->
@@ -63,7 +64,7 @@
   <!-- User Search Section End -->
 
   <!-- GitHub User and Pokemon Start  -->
-  <div class="pokemon-container blue-grey darken-1 col s6 center-align z-depth-5">
+  <div class="pokemon-container blue-grey darken-1 col s6 center-align z-depth-5" id="username-pokemon-box">
     <section id="display-windows">
       <div id="user-display-info">
         <div id="repoSearchTerm" class="col s6">
@@ -96,7 +97,7 @@
   <!--Reach Out End-->
       
   <!--Contact Form Start -->      
-        <div class="contact-form">
+        <div class="contact-form" id="contact-form">
           <h3>Contact Us</h3>
           <form>
             <label for="contact-name">Your Name</label>
@@ -115,6 +116,9 @@
     <h6> Submitted on GitHub with GitBash </h6>
   </footer>
   <!--Footer End-->
+  <audio controls autoplay muted>
+    <source src="assets/music/relaxing_pokemon_music_sliceup.mp3" type="audio/mpeg" class="music-player">
+  </audio>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="assets/js/pokemon.js"></script>

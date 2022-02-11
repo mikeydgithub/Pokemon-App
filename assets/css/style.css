@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -29,6 +30,20 @@
     padding-top: 60px;
     text-align: center;
 }
+@keyframes bounce {
+    20%{
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(-6px);
+    }
+}
 /*Header Content End*/
 
 
@@ -42,9 +57,7 @@
     border: 3px solid;
     border-radius: 3px;
     width: 50%;
-    margin-bottom: 50px;
-    margin-left: 385px;
-
+    margin: 50px 500px;
 }
 /*Search Form End */
 
@@ -57,13 +70,21 @@
     float: left;
 }
 
+.mewtwo-pic:hover {
+    animation: bounce 05.s linear;
+}
+
+#pokedex li img:hover {
+    animation: bounce 05.s linear;
+}
+
 /*Users and Pokemon Github Container Start*/
 .pokemon-container {
     border: 3px solid;
     border-radius: 3px;
     width: 50%;
     display: block;
-    margin-left: 385px;
+    margin: 0 500px;
 }
 /*Users and Weather Github Container End*/
 
@@ -141,6 +162,14 @@ footer {
     vertical-align: bottom;
 }
 /*Footer Section End*/
+
+/*Music Player Start*/
+audio {
+    width: 100%;
+}
+
+
+/*Music Player End*/
 
 /*Media query for different screens*/
 @media screen and (max-width: 728px){

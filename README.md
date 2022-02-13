@@ -36,7 +36,7 @@
 * Adding diverse rarity.
 
 ## Links
-* https://github.com/mikeydgithub/Group_project
+* https://github.com/mikeydgithub/Pokemon-App
 * https://mikeydgithub.github.io/Pokemon-App/
 
 ## Webpage
